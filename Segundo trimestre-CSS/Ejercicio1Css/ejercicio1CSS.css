@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    color: #005555;
+    text-align: justify;
+}
+
+h2 {
+    color: red;
+    font-weight: bold;
+}
+
+.p1 {
+    font-size: 20 px;
+
+}
+
+.h3a {
+    font-family: Courier;
+    color: brown;
+}
+
+div {
+    text-align: left;
+}
+
+.p2 {
+    text-decoration: underline;
+}
+
+.h3b {
+    font-family: Courier;
+    color: blue;
+}
+
+.p3 {
+    color: red;
+    font-size: 15 px;
+}

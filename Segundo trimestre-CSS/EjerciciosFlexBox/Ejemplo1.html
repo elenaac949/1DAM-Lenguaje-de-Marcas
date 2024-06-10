@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .elemento-flex1 {
+            flex: 1;
+            /* Los elementos crecerán para ocupar espacio igualmente */
+            padding: 30px; 
+            border: 1px solid black;
+        }
+
+        .elemento-flex2 {
+            flex: 2;
+            /* Los elementos crecerán para ocupar espacio igualmente */
+            padding: 30px; 
+            border: 1px solid black;
+        }
+        .elemento-flex3 {
+            flex: 3;
+            /* Los elementos crecerán para ocupar espacio igualmente */
+            padding: 30px; 
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor-flex">
+        <div class="elemento-flex1">1</div>
+        <div class="elemento-flex3">2</div>
+        <div class="elemento-flex1">3</div>
+        <div class="elemento-flex2">4</div>
+        <div class="elemento-flex3">5</div>
+    </div>
+    
+
+</body>
+
+</html>

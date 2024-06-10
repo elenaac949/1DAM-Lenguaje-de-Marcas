@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="coches">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="coche" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marca" type="xs:string"></xs:element>
+                            <xs:element name="modelo" type="xs:string"></xs:element>
+                            <xs:element name="ano" type="xs:integer"></xs:element>
+                            <xs:element name="precio" type="xs:decimal"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

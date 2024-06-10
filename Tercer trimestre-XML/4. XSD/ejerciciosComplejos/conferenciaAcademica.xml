@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conferenciaAcademica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:noNamespaceSchemaLocation="conferenciaAcademica.xsd">
+    <conferencias>
+        <conferencia id="Conf001" nombre="International Conference on Artificial Intelligence" año="2021" ciudad="New York">
+            <organizador id="Org001"/>
+            <participantes>
+                <participante ref="Part001"/>
+                <participante ref="Part002"/>
+            </participantes>
+            <sesiones>
+
+                <sesion id="Ses001" tema="Machine Learning" fecha="2021-07-12">
+                    <ponente ref="Part002"/>
+                </sesion>
+                
+                <sesion id="Ses002" tema="Robotics" fecha="2021-07-13">
+                    <ponente ref="Part001"/>
+                </sesion>
+            </sesiones>
+        </conferencia>
+    </conferencias>
+    <personas>
+        <persona id="Part001" nombre="John Doe" afiliacion="University of Somewhere"/>
+        <persona id="Part002" nombre="Jane Smith" afiliacion="Tech Institute"/>
+        <persona id="Org001" nombre="Alice Johnson" afiliacion="Conference Orgs"/>
+    </personas>
+</conferenciaAcademica>

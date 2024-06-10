@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coches xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="coches.xsd">
+    <coche>
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <ano>2020</ano>
+        <precio>20000</precio>
+    </coche>
+    <coche>
+        <marca>Ford</marca>
+        <modelo>Mustang</modelo>
+        <ano>2021</ano>
+        <precio>35000.5</precio>
+    </coche>
+    <coche>
+        <marca>Tesla</marca>
+        <modelo>Model 3</modelo>
+        <ano>2022</ano>
+        <precio>45000</precio>
+    </coche>
+</coches>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Olimpiadas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="olimpiadas.xsd">
+  <Deportistas>
+    <Deportista id="dep1" nombre="John Doe" deporte="Atletismo" país="USA" />
+    <Deportista id="dep2" nombre="Ana Smith" país="CAN" />
+    <Deportista id="dep3" nombre="Lu Han" deporte="Gimnasia" país="CHN" />
+    <Deportista id="dep4" nombre="Fan Yilin" deporte="Gimnasia" país="CHN" />
+  </Deportistas>
+  <Eventos>
+    <Evento id="evento1" nombre="100m hombres">
+      <Participa dep="dep1" />
+    </Evento>
+    <Evento id="evento2" nombre="200m mariposa mujeres">
+      <Participa dep="dep2" />
+    </Evento>
+    <Evento id="evento3" nombre="Equipo de gimnasia mujeres">
+      <Participa dep="dep3" />
+      <Participa dep="dep4" />
+    </Evento>
+  </Eventos>
+</Olimpiadas>

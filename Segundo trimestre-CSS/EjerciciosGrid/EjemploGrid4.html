@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de CSS Grid con Colores</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "main sidebar"
+                "footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        header {
+            grid-area: header;
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            grid-area: main;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        sidebar {
+            grid-area: sidebar;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Guía de Aceites para Cocinar</h1>
+        </header>
+        <main>
+            <h2>Diferentes Tipos de Aceites para Cocinar</h2>
+            <p>El mundo de los aceites de cocina es vasto y variado. Aquí exploramos algunos de los tipos más populares y sus usos.</p>
+            <section>
+                <h3>Aceite de Oliva</h3>
+                <p>Ampliamente utilizado en la cocina mediterránea, el aceite de oliva es famoso por sus beneficios para la salud y su perfil de sabor distintivo. Ideal para aderezos y cocina a baja temperatura.</p>
+            </section>
+            <section>
+                <h3>Aceite de Coco</h3>
+                <p>Con un alto punto de humo y un sabor tropical, el aceite de coco es perfecto para freír y hornear. También es una opción popular en dietas veganas.</p>
+            </section>
+            <section>
+                <h3>Aceite de Canola</h3>
+                <p>Un aceite versátil con un sabor suave y un alto punto de humo, ideal para freír, hornear y como base para aderezos.</p>
+            </section>
+            <section>
+                <h3>Aceite de Sésamo</h3>
+                <p>Conocido por su intenso sabor a nuez, el aceite de sésamo es un ingrediente clave en muchas recetas asiáticas. Se utiliza principalmente para condimentar y en platos salteados.</p>
+            </section>
+        </main>
+        <sidebar>
+            <h3>Consejos y Trucos</h3>
+            <ul>
+                <li>Elige el aceite adecuado para cada tipo de cocción.</li>
+                <li>Almacena los aceites en un lugar fresco y oscuro para mantener su frescura.</li>
+                <li>Experimenta con diferentes aceites para descubrir nuevos sabores.</li>
+            </ul>
+        </sidebar>
+        <footer>
+            <p>&copy; 2024 Cocina Sana. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

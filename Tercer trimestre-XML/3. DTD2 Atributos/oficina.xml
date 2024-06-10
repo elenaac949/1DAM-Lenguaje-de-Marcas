@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE oficina [
+    <!ELEMENT oficina (empleados)>
+    <!ELEMENT empleados (empleado+)>
+    <!ELEMENT empleado (nombre,puesto,email,departamento)>
+    <!ATTLIST empleado
+        id ID #REQUIRED
+        supervisor IDREF #IMPLIED >
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT puesto (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT departamento EMPTY>
+    <!ATTLIST departamento nombre CDATA #REQUIRED>
+]>
+<oficina>
+    <empleados>
+        <empleado id="e1">
+            <nombre>Juan Pérez</nombre>
+            <puesto>Gerente General</puesto>
+            <email>juan.perez@empresa.com</email>
+            <departamento nombre="Administración"></departamento>
+        </empleado>
+        <empleado id="e2" supervisor="e1">
+            <nombre>María Gómez</nombre>
+            <puesto>Subgerente</puesto>
+            <email>maria.gomez@empresa.com</email>
+            <departamento nombre="Finanzas"></departamento>
+        </empleado>
+        <empleado id="e3" supervisor="e1">
+            <nombre>Carlos López</nombre>
+            <puesto>Director de TI</puesto>
+            <email>carlos.lopez@empresa.com</email>
+            <departamento nombre="Tecnología de la Información"></departamento>
+        </empleado>
+        <empleado id="e4" supervisor="e3">
+            <nombre>Laura Martínez</nombre>
+            <puesto>Desarrollador de Software</puesto>
+            <email>laura.martinez@empresa.com</email>
+            <departamento nombre="Tecnología de la Información"></departamento>
+        </empleado>
+    </empleados>
+</oficina>

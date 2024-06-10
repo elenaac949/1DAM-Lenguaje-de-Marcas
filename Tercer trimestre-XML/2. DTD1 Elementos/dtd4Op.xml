@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mobiliario [
+    <!ELEMENT mobiliario (oficina+)>
+    <!ELEMENT oficina (nombre,(escritorio|silla|archivo)+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT escritorio (modelo,dimensiones,cajon*,teclado?)>
+    <!ELEMENT cajon (numero,tipo)>
+    <!ELEMENT ergonomica (#PCDATA)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT teclado (modelo,ergonomica)>
+    <!ELEMENT archivo (modelo,dimensiones,capacidad)>
+    <!ELEMENT capacidad (#PCDATA)>
+    <!ELEMENT silla (modelo,tipo,ruedas?)>
+    <!ELEMENT ruedas (cantidad?)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT dimensiones (ancho,alto,profundo)>
+    <!ELEMENT ancho (#PCDATA)>
+    <!ELEMENT alto (#PCDATA)>
+    <!ELEMENT profundo (#PCDATA)>
+]>
+
+<mobiliario>
+    <oficina>
+        <nombre>Despacho Ejecutivo</nombre>
+        <escritorio>
+            <modelo>E-120</modelo>
+            <dimensiones>
+                <ancho>150cm</ancho>
+                <alto>75cm</alto>
+                <profundo>70cm</profundo>
+            </dimensiones>
+            <cajon>
+                <numero>1</numero>
+                <tipo>Archivador</tipo>
+            </cajon>
+            <cajon>
+                <numero>2</numero>
+                <tipo>Personal</tipo>
+            </cajon>
+            <teclado>
+                <modelo>Logitech K380</modelo>
+                <ergonomica>Sí</ergonomica>
+            </teclado>
+        </escritorio>
+        <silla>
+            <modelo>S-45</modelo>
+            <tipo>Reclinable</tipo>
+            <ruedas>
+                <cantidad>5</cantidad>
+            </ruedas>
+        </silla>
+        <archivo>
+            <modelo>A-200</modelo>
+            <dimensiones>
+                <ancho>100cm</ancho>
+                <alto>200cm</alto>
+                <profundo>50cm</profundo>
+            </dimensiones>
+            <capacidad>500 documentos</capacidad>
+        </archivo>
+    </oficina>
+    <!-- Más oficinas y mobiliario pueden ser añadidos aquí -->
+</mobiliario>

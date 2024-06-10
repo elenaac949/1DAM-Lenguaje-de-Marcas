@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listaFrutas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="listaFrutas.xsd">
+    <fruta>
+        <nombre>Manzana</nombre>
+        <color>Rojo</color>
+    </fruta>
+    <fruta>
+        <nombre>Banana</nombre>
+        <color>Amarillo</color>
+    </fruta>
+    <fruta>
+        <nombre>Kiwi</nombre>
+        <color>Verde</color>
+    </fruta>
+</listaFrutas>

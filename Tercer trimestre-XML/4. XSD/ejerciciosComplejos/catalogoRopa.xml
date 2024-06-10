@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogoRopa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="catalogoRopa.xsd">
+    <prenda id="P001" tipo="Camiseta" talla="M" color="Azul">
+        <precio moneda="EUR">19.99</precio>
+    </prenda>
+    <prenda id="P002" tipo="Pantalón" talla="32" color="Negro">
+        <precio moneda="EUR">39.99</precio>
+    </prenda>
+    <prenda id="P003" tipo="Vestido" talla="S" color="Rojo">
+        <precio moneda="EUR">29.99</precio>
+    </prenda>
+</catalogoRopa>

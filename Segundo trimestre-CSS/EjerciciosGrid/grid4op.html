@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación Profesional en Informática en España</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #E7E7E7;
+            padding: 10px;
+            
+        }
+        .header-container{
+            background-color: #0056B3;
+            color: white;
+            display: grid;
+            grid-template-areas:
+            "logo titulo nav";
+            grid-template-columns: 1fr 2fr 1.5fr;
+            padding: 5px;
+            box-shadow: 3px 3px 5px rgba(0,0, 0, 1);
+        }
+        .logo{
+            grid-area: logo;
+            padding: 10px;       
+            text-align: center;   
+        }
+        .title{
+            grid-area: titulo;
+            padding: 5px;
+            text-align: center;
+            font-size: large;
+        }
+        header div nav{
+            grid-area: nav;
+            padding: 10px;
+            font-size: larger;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+        }
+        main{
+            display: grid;
+            grid-template-areas: 
+            "inicio cursos contacto"
+            ;
+            grid-template-columns: 2fr 3fr 2fr;
+            gap: 20px;
+        }
+        #inicio{
+            grid-area: inicio;
+        }
+        #cursos{
+            grid-area: cursos;
+        }
+        .curso-web{
+            border-left: 4px solid #0076FF;
+        }
+        .curso-sistemas{
+            border-left: 4px solid #17A42D;
+        }
+        .curso-multiplataforma{
+            border-left: 4px solid #FFBF05;
+        }
+
+        #contacto{
+            grid-area: contacto;
+        }
+        article{
+            border-radius: 15px;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0, 0, 0.7);
+        }
+        section{
+            padding: 5px;
+        }
+        footer{
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            height: 50px;
+            padding: 5px;
+        }
+
+        nav ul li{
+            list-style: none;
+            display: inline;
+            padding: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            margin-right: 20px;
+        }
+        nav ul li a:hover{
+            background-color: #007BFF;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logoInf.png" alt="Logo de Formación Profesional Informática"> <!-- Reemplaza con tu imagen -->
+            </div>
+            <div class="title">
+                <h1>Formación en Informática</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Formación Profesional en Informática en España</h1>
+            <p>Explora cursos, titulaciones y oportunidades en el sector de la informática.</p>
+        </section>
+
+        <section id="cursos">
+            <article class="curso-web">
+                <h2>Desarrollo de Aplicaciones Web</h2>
+                <p>Detalles sobre el curso de Desarrollo de Aplicaciones Web...</p>
+            </article>
+            <article class="curso-sistemas">
+                <h2>Sistemas Microinformáticos y Redes</h2>
+                <p>Detalles sobre el curso de Sistemas Microinformáticos y Redes...</p>
+            </article>
+            <article class="curso-multiplataforma">
+                <h2>Desarrollo de Aplicaciones Multiplataforma</h2>
+                <p>Información sobre el curso de Desarrollo de Aplicaciones Multiplataforma...</p>
+            </article>
+            <!-- Más cursos... -->
+        </section>
+
+        <section id="contacto">
+            <h2>Contacta con Nosotros</h2>
+            <!-- Información de contacto... -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Formación Profesional en Informática en España</p>
+    </footer>
+</body>
+
+</html>

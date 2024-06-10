@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo Complejo de CSS Grid con Etiquetas Semánticas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea;
+            
+        }
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav main sidebar"
+                "feature feature feature"
+                "footer footer footer";
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        main {
+            grid-area: main;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        aside {
+            grid-area: sidebar;
+            background-color: #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        section {
+            grid-area: feature;
+            background-color: #ffcc00;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #333333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Coches Eléctricos: La Revolución del Transporte</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#modelos">Modelos Populares</a></li>
+                <li><a href="#tecnologia">Tecnología</a></li>
+                <li><a href="#beneficios">Beneficios Ambientales</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h2 id="historia">La Historia de los Coches Eléctricos</h2>
+            <p>Los coches eléctricos han estado en desarrollo desde finales del siglo XIX. Aunque en sus inicios no pudieron competir con los vehículos de combustión interna, la crisis ambiental y el avance tecnológico han impulsado su popularidad en las últimas décadas.</p>
+            
+            <h2 id="modelos">Modelos de Coches Eléctricos Populares</h2>
+            <p>En el mercado actual, marcas como Tesla, Nissan y Chevrolet lideran con modelos innovadores como el Tesla Model 3, Nissan Leaf y Chevrolet Bolt. Estos vehículos no solo son eficientes en energía, sino que también ofrecen características avanzadas de conducción y seguridad.</p>
+            
+            <h2 id="tecnologia">Tecnología en los Coches Eléctricos</h2>
+            <p>La tecnología de baterías ha avanzado significativamente, permitiendo mayores distancias de viaje. Además, los sistemas de carga rápida y la creciente infraestructura de estaciones de carga están haciendo que los coches eléctricos sean más prácticos que nunca.</p>
+            
+            <h2 id="beneficios">Beneficios Ambientales de los Coches Eléctricos</h2>
+            <p>Los coches eléctricos reducen la dependencia de los combustibles fósiles y emiten cero emisiones de escape, lo que es crucial para combatir el cambio climático y mejorar la calidad del aire en las ciudades.</p>
+        </main>
+        
+        <aside>
+            <h3>Noticias Recientes</h3>
+            <p>Nuevo modelo eléctrico XYZ se lanza este año con una autonomía récord.</p>
+            <p>La infraestructura de carga eléctrica se expande a nivel nacional.</p>
+        </aside>
+        
+        <section>
+            <h3>Evento Destacado</h3>
+            <p>Participa en nuestro webinar sobre el futuro de la movilidad eléctrica el próximo mes. Expertos y líderes de la industria compartirán sus visiones y novedades.</p>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Coches Eléctricos Hoy. Todos los derechos reservados.</p>
+            <p>Síguenos en nuestras redes sociales para más actualizaciones.</p>
+        </footer>
+    
+    </div>
+
+</body>
+</html>

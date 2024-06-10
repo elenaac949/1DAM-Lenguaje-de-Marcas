@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10 px;
+
+}
+
+nav {
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.estilo1 {
+    margin-bottom: 10px;
+}
+
+.estilo2 {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}

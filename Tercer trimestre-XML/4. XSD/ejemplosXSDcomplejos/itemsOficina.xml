@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventario
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="itemsOficina.xsd">
+    <items>
+        <item id="IT001">
+            <nombre>Plumas</nombre>
+            <cantidad>100</cantidad>
+        </item>
+        <item id="IT002">
+            <nombre>Papel A4</nombre>
+            <cantidad>500</cantidad>
+        </item>
+        <item id="IT003">
+            <nombre>Carpetas</nombre>
+            <cantidad>200</cantidad>
+        </item>
+    </items>
+    <pedidos>
+        <pedido>
+            <itemRef itemID="IT001"/>
+            <itemRef itemID="IT002"/>
+        </pedido>
+        <pedido>
+            <itemRef itemID="IT003"/>
+        </pedido>
+    </pedidos>
+</inventario>

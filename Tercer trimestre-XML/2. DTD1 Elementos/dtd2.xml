@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE taller [
+    <!ELEMENT taller (vehiculo+)>
+    <!ELEMENT vehiculo (matricula, marca, modelo, reparaciones)>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT reparaciones (reparacion+)>
+    <!ELEMENT reparacion (descripcion,fecha,costo)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT costo (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+]>
+
+<taller>
+    <vehiculo>
+        <matricula>1234ABC</matricula>
+        <marca>Toyota</marca>
+        <modelo>Corolla</modelo>
+        <reparaciones>
+            <reparacion>
+                <descripcion>Cambio de aceite y filtros</descripcion>
+                <fecha>2023-03-10</fecha>
+                <costo>150.00</costo>
+            </reparacion>
+            <reparacion>
+                <descripcion>Reemplazo de pastillas de freno</descripcion>
+                <fecha>2023-03-12</fecha>
+                <costo>200.00</costo>
+            </reparacion>
+        </reparaciones>
+    </vehiculo>
+    <vehiculo>
+        <matricula>5678DEF</matricula>
+        <marca>Honda</marca>
+        <modelo>Civic</modelo>
+        <reparaciones>
+            <reparacion>
+                <descripcion>Alineación y balanceo</descripcion>
+                <fecha>2023-04-15</fecha>
+                <costo>100.00</costo>
+            </reparacion>
+        </reparaciones>
+    </vehiculo>
+    <!-- Más vehículos y reparaciones pueden ser añadidos aquí -->
+</taller>

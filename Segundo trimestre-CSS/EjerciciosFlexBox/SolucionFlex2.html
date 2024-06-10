@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mercado Laboral en el Sector Informático en España</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex; /* Cambio a flexbox */
+            flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+            justify-content: space-between; /* Espacio entre las cajas */
+        }
+        header {
+            background: #5097b3;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            display: flex; /* Uso de Flexbox */
+            justify-content: space-between; /* Alineación de los elementos */
+            align-items: center; /* Centrado vertical de los elementos */
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            display: flex; /* Uso de Flexbox para la lista */
+        }
+        header li {
+            margin: 0 20px;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .box {
+            text-align: center;
+            flex: 0 0 30%; /* Flexbox: no crecer, no encoger, base de 30% */
+            padding: 10px;
+            box-sizing: border-box;
+            background: #e8491d;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            margin-bottom: 20px; /* Espacio debajo de cada caja */
+        }
+        footer {
+            background: #5097b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px; /* Espacio antes del footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Sector Informático</span> en España</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Inicio</a></li>
+                    <li><a href="#">Empleo</a></li>
+                    <li><a href="#">Tendencias</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h3>Oportunidades de Empleo</h3>
+            <p>El sector informático en España está experimentando un crecimiento constante, ofreciendo oportunidades en diversas áreas como desarrollo de software, análisis de datos, ciberseguridad y más.</p>
+        </div>
+        <div class="box">
+            <h3>Salarios Competitivos</h3>
+            <p>Los profesionales de la informática en España disfrutan de salarios competitivos, con oportunidades de crecimiento y desarrollo profesional.</p>
+        </div>
+        <div class="box">
+            <h3>Innovación y Tecnología</h3>
+            <p>España se está posicionando como un centro de innovación en tecnologías emergentes, atrayendo a empresas y talentos a nivel global.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sector Informático en España</p>
+    </footer>
+</body>
+</html>

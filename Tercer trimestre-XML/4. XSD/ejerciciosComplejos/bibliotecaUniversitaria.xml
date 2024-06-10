@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotecaUniversitaria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:noNamespaceSchemaLocation="bibliotecaUniversitaria.xsd">
+    <bibliotecas>
+        <biblioteca id="B001" nombre="Central Library" ubicacion="Campus Central">
+            <libros>
+                <libro id="L001" titulo="Introduction to Algorithms" categoria="Ciencias de la Computación">
+                    <autor ref="A001"/>
+                    <estanteria codigo="CS101"/>
+                </libro>
+                <libro id="L002" titulo="Data Structures and Algorithm Analysis" categoria="Ciencias de la Computación">
+                    <autor ref="A002"/>
+                    <estanteria codigo="CS102"/>
+                </libro>
+            </libros>
+        </biblioteca>
+        <biblioteca id="B002" nombre="Law Library" ubicacion="Campus de Derecho">
+            <libros>
+                <libro id="L003" titulo="Law 101" categoria="Derecho">
+                    <autor ref="A003"/>
+                    <estanteria codigo="LW101"/>
+                </libro>
+            </libros>
+        </biblioteca>
+    </bibliotecas>
+    <usuarios>
+        <usuario id="U001" nombre="John Doe" email="john.doe@university.edu"/>
+        <usuario id="U002" nombre="Jane Smith" email="jane.smith@university.edu"/>
+    </usuarios>
+    <prestamos>
+        <prestamo id="P001" libro="L001" usuario="U001" fechaPrestamo="2024-04-01" fechaDevolucion="2024-04-15"/>
+        <prestamo id="P002" libro="L003" usuario="U002" fechaPrestamo="2024-04-02" fechaDevolucion="2024-04-16"/>
+    </prestamos>
+    <autores>
+        <autor id="A001" nombre="Thomas H. Cormen"/>
+        <autor id="A002" nombre="Mark Allen Weiss"/>
+        <autor id="A003" nombre="Jay Feinman"/>
+    </autores>
+</bibliotecaUniversitaria>

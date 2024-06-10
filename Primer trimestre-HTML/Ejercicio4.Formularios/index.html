@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio formulario</title>
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+
+
+        <fieldset>
+            <legend>Datos personales</legend>
+
+
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" required>
+            <br><br>
+
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido" required>
+            <br><br>
+
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+            <br><br>
+
+            Sexo:
+            <label><input type="radio" name="genero" id="genero">Maculino</label>
+            <label> <input type="radio" name="genero" id="genero">Femenino</label>
+            <br><br>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="Correo">Correo electrónico:</label>
+            <input type="email" name="Correo" id="Correo" required>
+            <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono">
+            <br><br>
+            <label for="direccion">Dirección:</label>
+            <textarea name="direccion" id="direccion" cols="50" rows="5"></textarea>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Encuesta</legend>
+
+            <label for="opciones">¿Cómo te enteraste de nosotros?</label><br><br>
+            <select name="opciones" id="opciones">
+                <option value="1">Internet</option>
+                <option value="2">Un amigo</option>
+                <option value="3">Publicidad</option>
+                <option value="4">Otros</option>
+            </select>
+
+            <br><br>
+
+            <label for="noticias">¿Te gustaría recibir noticias nuestras?</label><br><br>
+            <input type="checkbox" name="noticias"> Sí, quiero recibir noticias
+
+
+
+        </fieldset>
+
+        <label>
+            <input type="submit" value="Enviar">
+        </label>
+
+    </form>
+
+</body>
+
+</html>

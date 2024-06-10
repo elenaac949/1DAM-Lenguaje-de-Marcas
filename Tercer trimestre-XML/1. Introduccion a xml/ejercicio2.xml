@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biclioteca>
+    <libro categoria="Cocina">
+        <titulo idioma="it">Everyday Italian</titulo>
+        <autor>Giada De Laurentiis</autor>
+        <año>2005</año>
+        <precio>30.00</precio>
+    </libro>
+    <libro categoria="Infantil">
+        <titulo idioma="es">Harry Potter</titulo>
+        <autor>J.K. Rowling</autor>
+        <año>2005</año>
+        <precio>29.99</precio>
+    </libro>
+    <libro categoria="Web">
+        <titulo idioma="en">Learning XML</titulo>
+        <autor>Erik T. Ray</autor>
+        <año> 2003 </año>
+        <precio> 39.95</precio>
+    </libro>
+
+</biclioteca>

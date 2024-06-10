@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="alumnos.xsd">
+    <alumno>
+        <nombre>Juan Pérez</nombre>
+        <edad>12</edad>
+        <curso>6to grado</curso>
+    </alumno>
+    <alumno>
+        <nombre>Maria López</nombre>
+        <edad>11</edad>
+        <curso>5to grado</curso>
+    </alumno>
+</alumnos>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="bibliotecaUniversitaria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="bibliotecas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="biblioteca" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="libros">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="libro" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="autor">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="ref"
+                                                                            type="xs:IDREF"></xs:attribute>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:element name="estanteria">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="codigo"
+                                                                            type="xs:ID"></xs:attribute>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id" type="xs:ID"></xs:attribute>
+                                                            <xs:attribute name="titulo"
+                                                                type="xs:string"></xs:attribute>
+                                                            <xs:attribute name="categoria"
+                                                                type="xs:string"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID"></xs:attribute>
+                                    <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="ubicacion" type="xs:string"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="usuarios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="usuario" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id"></xs:attribute>
+                                    <xs:attribute name="nombre"></xs:attribute>
+                                    <xs:attribute name="email" type="xs:string"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="prestamos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="prestamo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" ></xs:attribute>
+                                    <xs:attribute name="libro" type="xs:IDREF"></xs:attribute>
+                                    <xs:attribute name="usuario" type="xs:IDREF"></xs:attribute>
+                                    <xs:attribute name="fechaPrestamo" type="xs:date"></xs:attribute>
+                                    <xs:attribute name="fechaDevolucion" type="xs:date"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="autores">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="autor" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id"></xs:attribute>
+                                    <xs:attribute name="nombre"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

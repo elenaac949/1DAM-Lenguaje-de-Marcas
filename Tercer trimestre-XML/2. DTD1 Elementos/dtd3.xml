@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE zoologico [
+    <!ELEMENT zoologico (habitats)>
+    <!ELEMENT habitats (habitat+)>
+    <!ELEMENT habitat (nombre, mamiferos*,aves*,reptiles*)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT mamiferos (mamifero+)>
+    <!ELEMENT mamifero (especie,caracteristicas)>
+    <!ELEMENT aves (ave+)>
+    <!ELEMENT ave (especie,caracteristicas)>
+    <!ELEMENT reptiles (reptil+)>
+    <!ELEMENT reptil (especie,caracteristicas)>
+    <!ELEMENT especie (#PCDATA)>
+    <!ELEMENT caracteristicas (caracteristica+)>
+    <!ELEMENT caracteristica (#PCDATA)>
+
+]>
+
+
+
+
+<zoologico>
+    <habitats>
+        <habitat>
+            <nombre>Selva Tropical</nombre>
+            <mamiferos>
+                <mamifero>
+                    <especie>Jaguar</especie>
+                    <caracteristicas>
+                        <caracteristica>Carnívoro</caracteristica>
+                        <caracteristica>Ágil en los árboles</caracteristica>
+                    </caracteristicas>
+                </mamifero>
+            </mamiferos>
+            <aves>
+                <ave>
+                    <especie>Tucán</especie>
+                    <caracteristicas>
+                        <caracteristica>Pico grande y colorido</caracteristica>
+                    </caracteristicas>
+                </ave>
+            </aves>
+        </habitat>
+        <habitat>
+            <nombre>Desierto</nombre>
+            <reptiles>
+                <reptil>
+                    <especie>Serpiente de Cascabel</especie>
+                    <caracteristicas>
+                        <caracteristica>Veneno potente</caracteristica>
+                    </caracteristicas>
+                </reptil>
+            </reptiles>
+        </habitat>
+    </habitats>
+</zoologico>

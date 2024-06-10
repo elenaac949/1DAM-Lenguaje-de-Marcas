@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ligaDeportiva">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="equipos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="equipo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jugadores">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="jugador" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="id" type="xs:ID"></xs:attribute>
+                                                            <xs:attribute name="nombre"
+                                                                type="xs:string"></xs:attribute>
+                                                            <xs:attribute name="posición"
+                                                                type="xs:string"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID"></xs:attribute>
+                                    <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="ciudad" type="xs:string"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="partidos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="partido" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="resultado">
+                                            <xs:complexType>
+                                                <xs:attribute name="final" type="xs:string"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="goles">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="gol" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="jugador"
+                                                                type="xs:IDREF"></xs:attribute>
+                                                            <xs:attribute name="minuto"
+                                                                type="xs:int"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="tarjetas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="tarjeta" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="tipo"
+                                                                type="xs:string"></xs:attribute>
+                                                            <xs:attribute name="jugador"
+                                                                type="xs:IDREF"></xs:attribute>
+                                                            <xs:attribute name="minuto"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id"></xs:attribute>
+                                    <xs:attribute name="fecha" type="xs:date"></xs:attribute>
+                                    <xs:attribute name="equipoLocal" type="xs:IDREF"></xs:attribute>
+                                    <xs:attribute name="equipoVisitante" type="xs:IDREF"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

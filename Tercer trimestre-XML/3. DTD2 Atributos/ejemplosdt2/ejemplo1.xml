@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre, edad, carrera)>
+<!ATTLIST alumno
+    id ID #REQUIRED
+    grado CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT carrera (#PCDATA)>
+]>
+<alumnos>
+    <alumno id="A001" grado="Primero">
+        <nombre>Juan Pérez</nombre>
+        <edad>20</edad>
+        <carrera>Ingeniería en Sistemas</carrera>
+    </alumno>
+    <alumno id="A002" grado="Segundo">
+        <nombre>Maria Lopez</nombre>
+        <edad>21</edad>
+        <carrera>Arquitectura</carrera>
+    </alumno>
+</alumnos>

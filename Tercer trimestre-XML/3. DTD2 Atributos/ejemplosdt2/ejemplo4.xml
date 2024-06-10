@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (titulo, autor, año)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ENTITY autorFavorito "Gabriel García Márquez">
+]>
+<biblioteca>
+    <libro>
+        <titulo>Cien años de soledad</titulo>
+        <autor>&autorFavorito;</autor>
+        <año>1967</año>
+    </libro>
+    <libro>
+        <titulo>El amor en los tiempos del cólera</titulo>
+        <autor>&autorFavorito;</autor>
+        <año>1985</año>
+    </libro>
+</biblioteca>

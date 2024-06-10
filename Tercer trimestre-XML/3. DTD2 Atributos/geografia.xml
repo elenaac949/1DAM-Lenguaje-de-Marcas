@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ++++++++++++ Mapa Mundial de Geografía ++++++++++++ -->
+<!DOCTYPE geografiaMundial [
+    <!ELEMENT geografiaMundial (continentes,monttanyas,relaciones)>
+    <!ELEMENT continentes (continente+)>
+    <!ELEMENT continente (paises)>
+    <!ATTLIST continente
+        id ID #REQUIRED
+        nombre CDATA #REQUIERED>
+    <!ELEMENT paises (pais+)>
+    <!ELEMENT pais (ciudadesPrincipales,rios)>
+    <!ATTLIST pais
+        id ID #REQUIRED
+        nombre CDATA #REQUIERED>
+    <!ELEMENT ciudadesPrincipales (ciudad+)>
+    <!ATTLIST ciudad
+        id ID #REQUIRED
+        nombre CDATA #REQUIERED>
+    <!ELEMENT rios (rio+)>
+    <!ATTLIST rio
+        id ID #REQUIRED
+        nombre CDATA #REQUIERED>
+
+    <!ELEMENT montanyas (montanya+)>
+    <!ELEMENT montanya (EMPTY)>
+    <!ATTLIST monntanya
+        id ID #REQUIRED
+        ubicacionIDrefs IDREF #REQUIRED
+        nombre CDATA #REQUIRED>
+
+    <!ELEMENT relaciones (paisesAdyacentes*,rioFluye*)>
+    <!ELEMENT paisesAdyacentes (EMPTY)>
+    <!ATTLIST paisesAdyacentes
+        paisID IDREF #REQUIRED
+        adyacenteAIDrefs IDREFS #REQUIRED>
+    <!ELEMENT rioFluye (EMPTY)>
+    <!ATTLIST rioFluye
+        rioID IDREF #REQUIRED
+        fluyeAtravesIDrefs IDREFS #REQUIRED>
+]>
+<geografiaMundial>
+    <!-- | Continentes | -->
+    <continentes>
+        <continente id="asia" nombre="Asia">
+            <!-- * Países en Asia * -->
+            <paises>
+                <pais id="china" nombre="China">
+                    <!-- Ciudades Principales -->
+                    <ciudadesPrincipales>
+                        <ciudad id="beijing" nombre="Beijing" />
+                        <ciudad id="shanghai" nombre="Shanghai" />
+                    </ciudadesPrincipales>
+                    <!-- Ríos Principales -->
+                    <rios>
+                        <rio id="yangtze" nombre="Yangtze" />
+                        <rio id="amarillo" nombre="Río Amarillo" />
+                    </rios>
+                </pais>
+                <pais id="india" nombre="India">
+                    <ciudadesPrincipales>
+                        <ciudad id="mumbai" nombre="Mumbai" />
+                        <ciudad id="nuevaDelhi" nombre="Nueva Delhi" />
+                    </ciudadesPrincipales>
+                    <rios>
+                        <rio id="ganges" nombre="Ganges" />
+                    </rios>
+                </pais>
+            </paises>
+        </continente>
+        <continente id="africa" nombre="África">
+            <!-- * Países en África * -->
+            <paises>
+                <pais id="egipto" nombre="Egipto">
+                    <ciudadesPrincipales>
+                        <ciudad id="cairo" nombre="El Cairo" />
+                    </ciudadesPrincipales>
+                    <rios>
+                        <rio id="nilo" nombre="Nilo" />
+                    </rios>
+                </pais>
+            </paises>
+        </continente>
+    </continentes>
+
+    <!-- | Montanyas Importantes | -->
+    <montanyas>
+        <montanya id="everest" ubicacionIDrefs="china" nombre="Monte Everest" />
+        <montanya id="kilimanjaro" ubicacionIDrefs="africa" nombre="Monte Kilimanjaro" />
+    </montanyas>
+
+    <!-- | Relaciones y Referencias | -->
+    <relaciones>
+        <paisesAdyacentes paisID="china" adyacenteAIDrefs="india" />
+        <rioFluye rioID="nilo" fluyeAtravesIDrefs="egipto" />
+    </relaciones>
+</geografiaMundial>

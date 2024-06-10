@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos_futbol>
+    <equipo>
+        <nombre>Atlético</nombre>
+        <ciudad>Madrid</ciudad>
+        <entrenador>Diego Pablo Simeone</entrenador>
+        <jugadores>
+            <jugador posicion="Delantero">
+                <nombre>Morata</nombre>
+                <nacionalidad>Español</nacionalidad>
+            </jugador>
+            <jugador posicion="Portero">
+                <nombre>Ivo Grbic</nombre>
+                <nacionalidad>Croata</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+    <equipo>
+        <nombre>Betis</nombre>
+        <ciudad>Sevilla</ciudad>
+        <entrenador>Manuel Pellegrini</entrenador>
+        <jugadores>
+            <jugador posicion="Defensa">
+                <nombre>Pezzella</nombre>
+                <nacionalidad>Argentino</nacionalidad>
+            </jugador>
+        </jugadores>
+        <jugadores>
+            <jugador posicion="Delantero">
+                <nombre>William José</nombre>
+                <nacionalidad>Brasileño</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos_futbol>

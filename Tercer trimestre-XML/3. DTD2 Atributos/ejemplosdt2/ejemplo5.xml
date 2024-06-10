@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE conferencia [
+<!ELEMENT conferencia (nombre, materiales)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT materiales EMPTY>
+<!ENTITY material1 "libro 1">
+<!ENTITY material2 "libro 2">
+<!ATTLIST materiales
+    referencias CDATA #IMPLIED>
+]>
+<conferencia>
+    <nombre>Tecnologías Web Emergentes</nombre>
+    <materiales referencias="&material1; &material2;"/>
+</conferencia>

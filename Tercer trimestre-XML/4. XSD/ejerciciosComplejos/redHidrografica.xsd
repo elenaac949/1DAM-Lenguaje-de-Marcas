@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="redHidrografica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rio" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fuente">
+                                <xs:complexType>
+                                    <xs:attribute name="latitud" type="xs:decimal"></xs:attribute>
+                                    <xs:attribute name="longitud" type="xs:decimal"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="afluentes">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="afluente" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="fuente">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="latitud"></xs:attribute>
+                                                            <xs:attribute name="longitud"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id"></xs:attribute>
+                                                <xs:attribute name="nombre"></xs:attribute>
+                                                <xs:attribute name="longitud"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:ID"></xs:attribute>
+                        <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+                        <xs:attribute name="longitud" type="xs:integer"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

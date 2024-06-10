@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+<!ELEMENT alumnos (grupo+, alumno+)>
+<!ELEMENT grupo (nombreGrupo)>
+<!ELEMENT alumno (nombre, edad, carrera)>
+<!ATTLIST grupo
+    idGrupo ID #REQUIRED>
+<!ATTLIST alumno
+    idAlumno ID #REQUIRED
+    grado CDATA #REQUIRED
+    promedio CDATA #IMPLIED
+    estado (activo|inactivo) #REQUIRED
+    tipoBeca (ninguna|media|completa) "ninguna"
+    idGrupoRef IDREF #REQUIRED>
+<!ELEMENT nombreGrupo (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT carrera (#PCDATA)>
+]>
+
+<alumnos>
+    <grupo idGrupo="G1">
+        <nombreGrupo>Grupo de Estudio de Sistemas</nombreGrupo>
+    </grupo>
+    <grupo idGrupo="G2">
+        <nombreGrupo>Grupo de Estudio de Derecho</nombreGrupo>
+    </grupo>
+
+    <alumno idAlumno="A001" grado="Primero" promedio="9.2" estado="activo" tipoBeca="completa" idGrupoRef="G1">
+        <nombre>Juan Pérez</nombre>
+        <edad>20</edad>
+        <carrera>Ingeniería en Sistemas</carrera>
+    </alumno>
+    <alumno idAlumno="A002" grado="Segundo" estado="activo" tipoBeca="media" idGrupoRef="G1">
+        <nombre>Maria Lopez</nombre>
+        <edad>21</edad>
+        <carrera>Arquitectura</carrera>
+    </alumno>
+    <alumno idAlumno="A003" grado="Tercero" promedio="8.5" estado="inactivo" tipoBeca="ninguna" idGrupoRef="G2">
+        <nombre>Carlos Ruiz</nombre>
+        <edad>22</edad>
+        <carrera>Derecho</carrera>
+    </alumno>
+</alumnos>

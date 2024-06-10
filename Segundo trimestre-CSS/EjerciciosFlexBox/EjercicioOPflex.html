@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computación Cuántica</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .navbar{
+            background-color: #333;
+            width: 100%;
+            height: 80px;
+            align-items: center;
+            justify-content: space-around;
+            display: flex;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            width:80%;
+            margin: auto;
+            justify-content:center ;
+            align-content: center;
+           
+
+        }
+        .card{
+            flex: 1;
+            background-color: white;
+            min-width: 300px;
+            max-width: 400px;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            
+        }
+        .navbar a:hover{
+            background-color: #DDDDDD;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#intro">Inicio</a>
+        <a href="#history">Historia</a>
+        <a href="#applications">Aplicaciones</a>
+    </div>
+
+    <div class="container">
+        <div class="card" id="intro">
+            <h3>Introducción a la Computación Cuántica</h3>
+            <p>La computación cuántica utiliza las propiedades cuánticas de la materia para realizar cálculos a velocidades extraordinarias.</p>
+        </div>
+
+        <div class="card" id="history">
+            <h3>Historia</h3>
+            <p>La computación cuántica comenzó como una idea teórica en el siglo XX y ha evolucionado rápidamente en las últimas décadas.</p>
+        </div>
+
+        <div class="card" id="applications">
+            <h3>Aplicaciones</h3>
+            <p>Las aplicaciones de la computación cuántica son amplias, incluyendo criptografía, simulación de materiales y optimización de problemas complejos.</p>
+        </div>
+    </div>
+</body>
+</html>

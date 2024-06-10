@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body bgcolor="#DDDDDD">
+    <h1>Formulario de entrada de datos</h1>
+    <form action="programa.php" method="get" enctype="application/x-www-form-urlencoded">
+        <table cellpadding="10" align="center" width="60%">
+            <tr bgcolor="#00AAFF">
+                <td align="left">
+                    <input type="text" name="nombre" id="nombre" value="Nombre" maxlength="15"><br><br>
+                    <input type="text" name="apellidos" id="apellidos" value="Apellidos" maxlength="25"><br><br>
+                    <textarea name="comentarios" id="comentarios" cols="50" rows="5"
+                        placeholder="Pon tus comentarios aquí"></textarea><br><br>
+                    <label for="foto"><big>Seleccione una foto</big></label><br>
+                    <input type="button" value="Seleccionar archivo"> nada seleccionado <br><br>
+                    <input type="email" value="e-mail"><br><br>
+                    <label for="contrasenia"><big>Password</big></label>
+                    <input type="password" name="contrasenia" id="contrasenia" maxlength="10"> <br><br>
+                </td>
+                <td align="left">
+                    <input type="radio" value="1" id="edad" name="edad"><label for="edad">Menor de 18</label><br>
+                    <input type="radio" value="2" id="edad" name="edad" checked><label for="edad">Entre 18 y
+                        65</label><br>
+                    <input type="radio" value="3" id="edad" name="edad"> <label for="edad">Mayor de 65</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="aceptacion" checked><label for="aceptacion">Acepto recibir
+                        publicaciones</label>
+                </td>
+                <td align="right">
+                    <input type="submit" value="Enviar información">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>

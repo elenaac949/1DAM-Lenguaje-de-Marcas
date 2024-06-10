@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE oscars [
+    <!ELEMENT oscars (pelicula+)>
+    <!ATTLIST oscars año CDATA #REQUIRED>
+    <!ELEMENT pelicula (titulo,sinopsis?,director?,categoria+)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT sinopsis (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT categoria (nombre,ganadora)>
+    <!ATTLIST categoria principal (si|no) #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ganadora (#PCDATA)>
+]>
+<oscars año="2020">
+    <pelicula>
+        <titulo>El Irlandés</titulo>
+        <director>Martin Scorsese</director>
+        <categoria principal="si">
+            <nombre>Mejor Director</nombre>
+            <ganadora>No</ganadora>
+        </categoria>
+        <categoria principal="no">
+            <nombre>Mejor Banda Sonora</nombre>
+            <ganadora>No</ganadora>
+        </categoria>
+    </pelicula>
+    <pelicula>
+        <titulo>Parásitos</titulo>
+        <sinopsis>Una familia de estafadores se infiltra en una familia rica, llevando a eventos
+            inesperados.</sinopsis>
+        <categoria principal="si">
+            <nombre>Mejor Película</nombre>
+            <ganadora>Sí</ganadora>
+        </categoria>
+        <categoria principal="si">
+            <nombre>Mejor Director</nombre>
+            <ganadora>Sí</ganadora>
+        </categoria>
+    </pelicula>
+    <pelicula>
+        <titulo>Joker</titulo>
+        <categoria principal="si">
+            <nombre>Mejor Actor</nombre>
+            <ganadora>Sí</ganadora>
+        </categoria>
+    </pelicula>
+</oscars>

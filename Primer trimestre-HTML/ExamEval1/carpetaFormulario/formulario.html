@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body text="#FFFFFF" vlink="#FFFFFF" leftmargin="20%" rightmargin="20%" topmargin="3%" bottommargin="5%">
+    <table bgcolor="#103885" cellpadding="10" cellspacing="5">
+        <form action="/recepdatos.php" method="get" enctype="application/x-www-form-urlencoded"></form>
+        <tr>
+            <th colspan="2">
+                <h1>Solicitud de Información-Curso Informática</h1>
+            </th>
+        </tr>
+        <tr>
+            <td>
+
+                <label for="nombre">Nombre completo*:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="60" size="40" placeholder="Nombre y Apellidos"
+                    required> <br>
+
+                <label for="correo">Correo electrónico*:</label>
+                <input type="email" name="correo" id="correo" size="35" required> <br> <br>
+
+                <label for="telefono">Número de teléfono*:</label>
+                <input type="tel" max="9" size="12" required title="Solo se permiten 9 caracteres"> <br>
+
+                <p>Subir CV y carta de presentación:</p>
+                <input type="button" value="Seleccionar archivos" title="Solo archivos tipo PDF o WORD"> ningún archivo
+                seleccionado
+                <br><br>
+
+                <label for="mes">Mes de interés para el curso:</label><br>
+                <input type="month"> <br><br>
+
+                <label for="edad"> Tu edad:</label>
+                <input type="number" title="Mínimo de 18 años" min="18">
+
+
+            </td>
+            <td>
+                <img src="/imagenes/manos_teclado.jpg" alt="Manos en un teclado" height="200">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <br>
+                <fieldset>
+                    <legend>¿En qué formato prefieres el curso?*</legend>
+                    <input type="radio" name="formato" id="presencial" required><label
+                        for="presencial">Presencial</label> <br>
+                    <input type="radio" name="formato" id="online" required><label for="">Online</label>
+                </fieldset> <br>
+                <fieldset>
+                    <legend>Nivel de experinecia en informática*:</legend>
+                    <input type="radio" name="experiencia" id="principiante" required> <label
+                        for="principiante">Principiante</label > <br>
+                    <input type="radio" name="experiencia" id="intermedio" checked required><label
+                        for="intermedio">Intermedio</label> <br>
+                    <input type="radio" name="experiencia" id="avanzado" required><label for="avanzado">Avanzado</label>
+                </fieldset><br>
+                <input type="checkbox" name="suscrito" id="suscrito" checked> <label for="suscrito">Suscribirse al
+                    boletín informativo</label><br>
+                <input type="checkbox" name="aceptoTerm" id="aceptoTerm"> <label for="aceptpTerm">Acepto los términos y
+                    condiciones</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Enviar solicitud"><br><br>
+                <input type="reset" value="Borrar campos">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <a href="/index.html"><u>HOME</u></a>
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE documento [
+    <!NOTATION PNG SYSTEM "image/png">
+    <!NOTATION JPEG SYSTEM "image/jpeg">
+    <!NOTATION PDF SYSTEM "application/pdf">
+    <!NOTATION MP3 SYSTEM "audio/mpeg">
+    <!ENTITY logoPNG SYSTEM "logo.png" NDATA PNG>
+    <!ENTITY reportePDF SYSTEM "reporte.pdf" NDATA PDF>
+    <!ENTITY fondoJPEG SYSTEM "fondo.jpg" NDATA JPEG>
+    <!ENTITY musicaMP3 SYSTEM "musica.mp3" NDATA MP3>
+]>
+<documento>
+    <titulo>Un Documento con Multimedia</titulo>
+    <referencia>logoPNG</referencia>
+    <referencia>reportePDF</referencia>
+    <referencia>fondoJPEG</referencia>
+    <referencia>musicaMP3</referencia>
+</documento>

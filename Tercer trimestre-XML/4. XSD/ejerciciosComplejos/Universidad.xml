@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universidad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="Universidad.xsd">
+    <departamento nombre="Informática">
+        <curso id="C101" nombre="Introducción a la Programación" creditos="4">
+            <profesor id="P001"/>
+        </curso>
+        <curso id="C102" nombre="Algoritmos Avanzados" creditos="3">
+            <prerrequisito ref="C101"/>
+            <profesor id="P002"/>
+        </curso>
+        <curso id="C103" nombre="Estructuras de Datos" creditos="3">
+            <prerrequisito ref="C101"/>
+            <profesor id="P001"/>
+        </curso>
+        <curso id="C104" nombre="Bases de Datos" creditos="3">
+            <prerrequisito ref="C103"/>
+            <profesor id="P003"/>
+        </curso>
+    </departamento>
+    <departamento nombre="Matemáticas">
+        <curso id="C201" nombre="Álgebra Lineal" creditos="4">
+            <profesor id="P004"/>
+        </curso>
+        <curso id="C202" nombre="Cálculo Diferencial" creditos="4">
+            <profesor id="P005"/>
+        </curso>
+        <curso id="C203" nombre="Cálculo Integral" creditos="4">
+            <prerrequisito ref="C202"/>
+            <profesor id="P005"/>
+        </curso>
+    </departamento>
+    <profesores>
+        <profesor id="P001" nombre="Juan Pérez" departamento="Informática"/>
+        <profesor id="P002" nombre="Ana López" departamento="Informática"/>
+        <profesor id="P003" nombre="Carlos Gómez" departamento="Informática"/>
+        <profesor id="P004" nombre="María García" departamento="Matemáticas"/>
+        <profesor id="P005" nombre="Lucía Ramírez" departamento="Matemáticas"/>
+    </profesores>
+</universidad>

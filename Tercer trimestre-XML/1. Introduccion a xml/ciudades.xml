@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- comentarios-->
+<ciudades_esp>
+    <ciudad esCapital="Si">
+        <nombre>Madrid</nombre>
+        <poblacion>3223334
+        </poblacion>
+        <area>604.3
+        </area>
+        <region>Comunidad de Madrid
+        </region>
+        <atraccion>Palacio Real
+        </atraccion>
+        <elevacion>667
+        </elevacion>
+    </ciudad>
+    <ciudad esCapital="No">
+        <nombre>Barcelona</nombre>
+        <poblacion>1620343
+        </poblacion>
+        <area>101.9
+        </area>
+        <region>Cataluña
+        </region>
+        <atraccion>Sagrada Familia
+        </atraccion>
+        <elevacion>12</elevacion>
+    </ciudad>
+    <ciudad esCapital="No">
+        <nombre>Valencia</nombre>
+        <poblacion>789744
+        </poblacion>
+        <area>134.65
+        </area>
+        <region>Comunidad Valenciana
+        </region>
+        <atraccion>Ciudad de las Artes y las Ciencias
+        </atraccion>
+        <elevacion>15</elevacion>
+    </ciudad>
+    <ciudad esCapital="No">
+        <nombre>Sevilla</nombre>
+        <poblacion>688711
+        </poblacion>
+        <area>140</area>
+        <region>Andalucía
+        </region>
+        <atraccion>Alcázar de Sevilla
+        </atraccion>
+        <elevacion>7</elevacion>
+    </ciudad>
+    <ciudad esCapital="No">
+        <nombre>Zaragoza</nombre>
+        <poblacion>666880
+        </poblacion>
+        <area>973.78
+        </area>
+        <region>Aragón</region>
+        <atraccion>Basílica del Pilar
+        </atraccion>
+        <elevacion>200</elevacion>
+    </ciudad>
+</ciudades_esp>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE proveedores [ 
+    <!ELEMENT proveedores (proveedor*)>
+    <!ELEMENT proveedor (nombre,direccion,alimentos+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT alimentos (tipo+)>
+    <!ELEMENT tipo (#PCDATA)>
+]>
+
+<proveedores>
+    <proveedor>
+        <nombre>Proveedor Uno</nombre>
+        <direccion>Calle Falsa 123, Ciudad, País</direccion>
+        <alimentos>
+            <tipo>Frutas</tipo>
+            <tipo>Verduras</tipo>
+        </alimentos>
+    </proveedor>
+    <proveedor>
+        <nombre>Proveedor Dos</nombre>
+        <direccion>Avenida Real 456, Ciudad, País</direccion>
+        <alimentos>
+            <tipo>Carnes</tipo>
+            <tipo>Pescados</tipo>
+        </alimentos>
+    </proveedor>
+    <proveedor>
+        <nombre>Proveedor Tres</nombre>
+        <direccion>Plaza Central 789, Ciudad, País</direccion>
+        <alimentos>
+            <tipo>Lácteos</tipo>
+            <tipo>Granos</tipo>
+        </alimentos>
+    </proveedor>
+</proveedores>

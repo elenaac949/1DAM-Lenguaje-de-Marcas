@@ -1,0 +1,36 @@
+div{
+    align-self: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+table{
+    width: 60%;
+    height: 500px;
+    border: 3px outset grey;
+    margin: auto;
+}
+table,th,td{
+    text-align: center;
+   
+}
+td,tr,th{
+    border: 1px outset grey;
+}
+.td1{
+    vertical-align: middle;
+    background-color: #88aacc;
+}
+.td11{
+    background-color: #88aacc;
+}
+.td2{
+    vertical-align: middle;
+    background-color: #99ccee;
+}
+.td22{
+    background-color: #aaaadd;
+}
+.td3{
+    vertical-align: middle;
+    background-color: #bbeeff;
+}

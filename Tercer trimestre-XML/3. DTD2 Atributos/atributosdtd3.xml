@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportes [
+    <!ELEMENT deportes (deporte+)>
+    <!ELEMENT deporte (equipo*,partido*)>
+    <!ATTLIST deporte
+        nombre CDATA #REQUIRED
+        federacionInternacional CDATA #REQUIRED>
+    <!ELEMENT equipo (jugador+)>
+    <!ATTLIST equipo
+        id ID #REQUIRED
+        nombre CDATA #REQUIRED
+        fundacion CDATA #REQUIRED
+        ciudad CDATA #REQUIRED
+        entrenador CDATA #REQUIRED
+     >
+    <!ELEMENT jugador (#PCDATA)>
+    <!ATTLIST jugador
+        id ID #REQUIRED
+        nombre CDATA #REQUIRED
+        posicion CDATA #REQUIRED
+        numero CDATA #REQUIRED
+        nacionalidad CDATA #REQUIRED>
+    <!ELEMENT partido (resultado,arbitro)>
+    <!ATTLIST partido
+        id ID #REQUIRED
+        fecha CDATA #REQUIRED
+        lugar CDATA #REQUIRED
+        asistencia CDATA #REQUIRED>
+    <!ELEMENT resultado (#PCDATA)>
+    <!ATTLIST resultado
+        equipoA IDREF #REQUIRED
+        golesA CDATA #REQUIRED
+        equipoB IDREF #REQUIRED
+        golesB CDATA #REQUIRED
+     >
+    <!ELEMENT arbitro EMPTY>
+    <!ATTLIST arbitro
+        nombre CDATA #REQUIRED
+        nacionalidad CDATA #REQUIRED>
+]>
+<deportes>
+    <deporte nombre="Fútbol" federacionInternacional="FIFA">
+        <!-- Equipos de Fútbol -->
+        <!-- FC Barcelona -->
+        <equipo id="eq1" nombre="FC Barcelona" fundacion="1899" ciudad="Barcelona"
+            entrenador="Ronald Koeman">
+            <jugador id="jug1" nombre="Lionel Messi" posicion="Delantero" numero="10"
+                nacionalidad="Argentina">Gran capacidad de dribbling y visión de juego.</jugador>
+            <jugador id="jug2" nombre="Andres Iniesta" posicion="Mediocampista" numero="8"
+                nacionalidad="España">Maestro del control del balón y pases precisos.</jugador>
+        </equipo>
+        <!-- Real Madrid -->
+        <equipo id="eq2" nombre="Real Madrid" fundacion="1902" ciudad="Madrid"
+            entrenador="Zinedine Zidane">
+            <jugador id="jug3" nombre="Cristiano Ronaldo" posicion="Delantero" numero="7"
+                nacionalidad="Portugal">Potente disparo y habilidades aéreas sobresalientes.</jugador>
+            <jugador id="jug4" nombre="Sergio Ramos" posicion="Defensa" numero="4"
+                nacionalidad="España">Defensa férreo y líder en el campo.</jugador>
+        </equipo>
+        <!-- Partido -->
+        <partido id="part1" fecha="2024-03-15" lugar="Camp Nou" asistencia="99350">
+            <resultado equipoA="eq1" golesA="2" equipoB="eq2" golesB="3">Victoria ajustada del Real
+                Madrid en un clásico emocionante.</resultado>
+            <arbitro nombre="Mateu Lahoz" nacionalidad="España" />
+        </partido>
+    </deporte>
+    <deporte nombre="Baloncesto" federacionInternacional="FIBA">
+        <!-- Equipos de Baloncesto -->
+        <!-- Los Angeles Lakers -->
+        <equipo id="eq3" nombre="Los Angeles Lakers" fundacion="1947" ciudad="Los Angeles"
+            entrenador="Frank Vogel">
+            <jugador id="jug5" nombre="LeBron James" posicion="Alero" numero="23"
+                nacionalidad="Estados Unidos">Destacada habilidad en puntos y asistencias.</jugador>
+            <jugador id="jug6" nombre="Anthony Davis" posicion="Pívot" numero="3"
+                nacionalidad="Estados Unidos">Excelente en rebotes y tapones.</jugador>
+        </equipo>
+        <!-- Chicago Bulls -->
+        <equipo id="eq4" nombre="Chicago Bulls" fundacion="1966" ciudad="Chicago"
+            entrenador="Billy Donovan">
+            <jugador id="jug7" nombre="Michael Jordan" posicion="Escolta" numero="23"
+                nacionalidad="Estados Unidos">Considerado el mejor jugador de todos los tiempos.</jugador>
+            <jugador id="jug8" nombre="Scottie Pippen" posicion="Alero" numero="33"
+                nacionalidad="Estados Unidos">Gran defensor y versátil en ataque.</jugador>
+        </equipo>
+        <!-- Partido -->
+        <partido id="part2" fecha="2024-05-20" lugar="Staples Center" asistencia="19068">
+            <resultado equipoA="eq3" golesA="102" equipoB="eq4" golesB="96">Los Lakers se coronan
+                campeones tras un partido intenso.</resultado>
+            <arbitro nombre="James Capers" nacionalidad="Estados Unidos" />
+        </partido>
+    </deporte>
+</deportes>

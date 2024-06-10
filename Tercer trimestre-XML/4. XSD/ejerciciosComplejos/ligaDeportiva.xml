@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ligaDeportiva xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ligaDeportiva.xsd">
+    <equipos>
+        <equipo id="E001" nombre="Tigres" ciudad="Monterrey">
+            <jugadores>
+                <jugador id="J001" nombre="Carlos Sánchez" posición="Delantero" />
+                <jugador id="J002" nombre="Miguel Ponce" posición="Defensa" />
+            </jugadores>
+        </equipo>
+        <equipo id="E002" nombre="Águilas" ciudad="CDMX">
+            <jugadores>
+                <jugador id="J003" nombre="Ricardo Peláez" posición="Mediocampista" />
+                <jugador id="J004" nombre="Oscar Pérez" posición="Portero" />
+            </jugadores>
+        </equipo>
+    </equipos>
+    <partidos>
+        <partido id="P001" fecha="2024-05-15" equipoLocal="E001" equipoVisitante="E002">
+            <resultado final="2-1" />
+            <goles>
+                <gol jugador="J001" minuto="23" />
+                <gol jugador="J003" minuto="45" />
+                <gol jugador="J001" minuto="76" />
+            </goles>
+            <tarjetas>
+                <tarjeta tipo="Amarilla" jugador="J002" minuto="58" />
+                <tarjeta tipo="Roja" jugador="J004" minuto="62" />
+            </tarjetas>
+        </partido>
+    </partidos>
+</ligaDeportiva>

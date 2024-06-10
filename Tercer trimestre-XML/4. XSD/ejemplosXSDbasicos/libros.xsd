@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="genero">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Ficción"/>
+                <xs:enumeration value="No Ficción"/>
+                <xs:enumeration value="Ciencia Ficción"/>
+                <xs:enumeration value="Fantasía"/>
+                <xs:enumeration value="Biografía"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+</xs:schema>

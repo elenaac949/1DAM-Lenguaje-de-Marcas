@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogoLibros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="catalogoLibros.xsd">
+    <libro id="L001" titulo="El Gran Gatsby" autor="F. Scott Fitzgerald" añoPublicacion="1925"/>
+    <libro id="L002" titulo="1984" autor="George Orwell" añoPublicacion="1949"/>
+</catalogoLibros>

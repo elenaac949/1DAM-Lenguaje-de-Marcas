@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<escuela
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="alumnos2.xsd">
+    <alumno id="A001">
+        <nombre>Carlos Pérez</nombre>
+        <edad>20</edad>
+        <cursos>
+            <curso calificacion="A">
+                <nombreCurso>Matemáticas</nombreCurso>
+            </curso>
+            <curso calificacion="B">
+                <nombreCurso>Literatura</nombreCurso>
+            </curso>
+        </cursos>
+    </alumno>
+    <alumno id="A002">
+        <nombre>Lucía Gómez</nombre>
+        <edad>22</edad>
+        <cursos>
+            <curso calificacion="A">
+                <nombreCurso>Biología</nombreCurso>
+            </curso>
+            <curso calificacion="A">
+                <nombreCurso>Química</nombreCurso>
+            </curso>
+        </cursos>
+    </alumno>
+</escuela>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formularios Opcional 2</title>
+</head>
+
+<body>
+    <h1>Envío de Documentos al Ayuntamineto de Tres Cantos</h1>
+    <h2>Instrucciones Generales</h2>
+    <h3>Por facor, siga los siguientes pasos:</h3>
+    <p align="center">Es importante que envíe todos los documentos requeridos con la información concreta y siga las
+        instrucciones detalladamente.</p>
+    <br>
+    <p><b>Nota:</b> <i>Revise dos veces </i> <u>antes de enviar</u> <small>para evitar errores.</small></p>
+    <h2>Lista de documentos necesarios:</h2>
+    <ol>
+        <li>Copia del DNI</li>
+        <li>Justificante de empadronamiento</li>
+        <li>Último recibo del IBI</li>
+    </ol>
+    <ol type="A">
+        <li>Certificado de convivencia</li>
+        <li>Documento de propiedad</li>
+    </ol>
+
+    <ol type="i">
+        <li>Escritura pública</li>
+        <li>Documentos adicionales si los hubiera</li>
+    </ol>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" minlength="3"
+                maxlength="50"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@dominino.com"><br>
+
+            <label for="contrasenia">Contraseña:</label>
+            <input type="password" name="contrasenia" id="contrasenia"
+                pattern=".{8,} (?=.*[a-z])(?=.*[A-Z]) (?=.*\d)"><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="18" max="99"><br>
+
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento"><br>
+
+            <label for="horaCita">Hora de cita:</label>
+            <input type="time" name="horaCita" id="horaCita"><br>
+
+            <label for="color">Color favorito:</label>
+            <input type="color" name="color" id="color"><br>
+
+            <label>Sube tu documento:</label>
+            <input type="button" value="Seleccionar archivo"> Ningun archivo selec. <br>
+
+            <h3>Documentos a enviar:</h3>
+            <input type="checkbox" value="1" name="documentoDNI" id="documentoDNI">
+            <label for="documentoDNI">Copia del DNI</label> <br>
+
+            <input type="checkbox" value="2" name="documentoEmpad" id="documentoEmpad">
+            <label for="documentoEmpad">Justificante de empadronamiento</label> <br>
+
+            <input type="checkbox" value="3" name="documentoIBI" id="documentoIBI">
+            <label for="documentoIBI">Último recibo del IBI</label> <br>
+
+            <input type="checkbox" value="4" name="documentoConvivencia" id="documentoConvivencia">
+            <label for="documentoConvivencia">Certificado de convivencia</label> <br>
+
+            <input type="checkbox" value="5" name="documentoPropiedad" id="documentoPropiedad">
+            <label for="documentoPropiedad">Documento de propiedad </label><br>
+
+            <label for="terminos">¿Aceptas los términos?</label>
+            <input type="checkbox" name="terminos" checked> <br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="Masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" name="sexo" id="femenino">
+            <label for="femenino">Femenino</label>
+            <br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea name="comentarios" id="comentarios" cols="20" rows="2"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>

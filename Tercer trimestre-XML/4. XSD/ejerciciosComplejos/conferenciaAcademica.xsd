@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="conferenciaAcademica">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="conferencias">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="conferencia" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="organizador">
+                                            <xs:complexType>
+                                                <xs:attribute name="id" type="xs:IDREF"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="participantes">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="participante" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="ref" type="xs:IDREF"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="sesiones">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="sesion" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="ponente">
+                                                                    <xs:complexType>
+                                                                        <xs:attribute name="ref"></xs:attribute>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="id"></xs:attribute>
+                                                            <xs:attribute name="tema" type="xs:string"></xs:attribute>
+                                                            <xs:attribute name="fecha" type="xs:date"></xs:attribute>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id"></xs:attribute>
+                                    <xs:attribute name="nombre"></xs:attribute>
+                                    <xs:attribute name="año" type="xs:int"></xs:attribute>
+                                    <xs:attribute name="ciudad" type="xs:string"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="personas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="persona" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:ID"></xs:attribute>
+                                    <xs:attribute name="nombre" type="xs:string"></xs:attribute>
+                                    <xs:attribute name="afiliacion" type="xs:string"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

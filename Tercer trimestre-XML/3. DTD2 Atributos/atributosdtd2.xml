@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ferreteria [
+    <!ELEMENT ferreteria (material+)>
+    <!ELEMENT material (#PCDATA)>
+    <!ATTLIST material
+        id ID #REQUIRED
+        nombre CDATA #REQUIRED
+        tipo CDATA #REQUIRED
+        precio CDATA #REQUIRED
+        recomendadoPara IDREFS #IMPLIED 
+     >
+]>
+<ferreteria>
+    <material id="herr1" nombre="Martillo" tipo="Herramienta" precio="15.00"> Un martillo robusto y
+        durable, ideal para todo tipo de trabajos de carpintería. </material>
+    <material id="torn1" nombre="Tornillo para madera" tipo="Tornillo" precio="0.05"
+        recomendadoPara="herr1"> Tornillos de acero de alta resistencia, 5mm, ideales para madera. </material>
+    <material id="clav1" nombre="Clavo de acero" tipo="Clavo" precio="0.02" recomendadoPara="herr1">
+        Clavos de acero de 4mm, perfectos para unir piezas de madera con firmeza. </material>
+</ferreteria>

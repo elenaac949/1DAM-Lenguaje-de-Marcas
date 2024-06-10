@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo [
+    <!ELEMENT catalogo (categorias,herramientas,empleados)>
+    <!ELEMENT categorias (categoria+)>
+    <!ELEMENT categoria (nombre)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ATTLIST categoria id ID #REQUIRED>
+    <!ELEMENT herramientas (herramienta+)>
+    <!ELEMENT herramienta (nombre,descripcion)>
+    <!ATTLIST herramienta
+        id ID #REQUIRED
+        categoriaRef IDREF #REQUIRED
+        empleadosRef IDREFS #REQUIRED>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT empleados (empleado+)>
+    <!ELEMENT empleado (nombre)>
+    <!ATTLIST empleado id ID #REQUIRED>
+]>
+<catalogo>
+    <categorias>
+        <categoria id="c1">
+            <nombre>Perforación</nombre>
+        </categoria>
+        <categoria id="c2">
+            <nombre>Corte</nombre>
+        </categoria>
+        <categoria id="c3">
+            <nombre>Medición</nombre>
+        </categoria>
+        <categoria id="c4">
+            <nombre>Carga</nombre>
+        </categoria>
+    </categorias>
+    <herramientas>
+        <herramienta id="h1" categoriaRef="c1" empleadosRef="e1 e2">
+            <nombre>Taladro eléctrico</nombre>
+            <descripcion>Taladro eléctrico de velocidad ajustable, ideal para perforaciones precisas
+                en concreto y madera.</descripcion>
+        </herramienta>
+        <herramienta id="h2" categoriaRef="c2" empleadosRef="e3 e4">
+            <nombre>Sierra circular</nombre>
+            <descripcion>Sierra circular con disco de diamante para cortes precisos en materiales
+                duros.</descripcion>
+        </herramienta>
+        <herramienta id="h3" categoriaRef="c3" empleadosRef="e5">
+            <nombre>Nivel láser</nombre>
+            <descripcion>Nivel láser con alcance de hasta 30 metros, perfecto para trabajos de
+                alineación y medición en grandes espacios.</descripcion>
+        </herramienta>
+        <herramienta id="h4" categoriaRef="c4" empleadosRef="e1 e6">
+            <nombre>Carretilla elevadora</nombre>
+            <descripcion>Carretilla elevadora con capacidad de carga de hasta 2000 kg, ideal para
+                mover materiales pesados en obra.</descripcion>
+        </herramienta>
+        <herramienta id="h5" categoriaRef="c1" empleadosRef="e2 e3 e7">
+            <nombre>Martillo perforador</nombre>
+            <descripcion>Martillo perforador de alto rendimiento para trabajos de demolición y
+                perforación en concreto.</descripcion>
+        </herramienta>
+    </herramientas>
+    <empleados>
+        <empleado id="e1">
+            <nombre>Juan Pérez</nombre>
+        </empleado>
+        <empleado id="e2">
+            <nombre>María López</nombre>
+        </empleado>
+        <empleado id="e3">
+            <nombre>Carlos Sánchez</nombre>
+        </empleado>
+        <empleado id="e4">
+            <nombre>Lucía Gómez</nombre>
+        </empleado>
+        <empleado id="e5">
+            <nombre>Ricardo Díaz</nombre>
+        </empleado>
+        <empleado id="e6">
+            <nombre>Esteban Morales</nombre>
+        </empleado>
+        <empleado id="e7">
+            <nombre>Ana Torres</nombre>
+        </empleado>
+    </empleados>
+</catalogo>

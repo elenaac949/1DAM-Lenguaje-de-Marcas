@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE terremotos [
+    <!ELEMENT terremotos (terremoto+)>
+    <!ELEMENT terremoto (ubicacion,magnitud,detalles,observaciones?,historial?,ayuda?)>
+    <!ATTLIST terremoto
+        id ID #REQUIRED
+        fecha CDATA #REQUIRED>
+    <!ELEMENT ubicacion (#PCDATA)>
+    <!ELEMENT magnitud (#PCDATA)>
+    <!ELEMENT detalles (#PCDATA)>
+    <!ATTLIST detalles referencia CDATA #IMPLIED>
+    <!ELEMENT historial (evento+)>
+    <!ELEMENT evento (descripcion,fechaEvento)>
+    <!ATTLIST evento id ID #REQUIRED>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT fechaEvento (#PCDATA)>
+    <!ELEMENT observaciones (#PCDATA)>
+    <!ELEMENT ayuda (#PCDATA)>
+    <!ATTLIST ayuda eventosRelacionados IDREFS #IMPLIED>
+]>
+<terremotos>
+    <terremoto id="eq1" fecha="2021-07-29">
+        <ubicacion>Tokio, Japón</ubicacion>
+        <magnitud>7.3</magnitud>
+        <detalles>Un terremoto significativo con pocos daños debido a normas de construcción
+            avanzadas.</detalles>
+        <observaciones>Se registraron numerosas réplicas.</observaciones>
+        <historial>
+            <evento id="evt1">
+                <descripcion>Un terremoto anterior en 1923 devastó la región.</descripcion>
+                <fechaEvento>1923-09-01</fechaEvento>
+            </evento>
+        </historial>
+        <ayuda eventosRelacionados="evt1 evt2">Se implementaron esfuerzos significativos de ayuda y
+            reconstrucción.</ayuda>
+    </terremoto>
+    <terremoto id="eq2" fecha="2021-08-04">
+        <ubicacion>Lima, Perú</ubicacion>
+        <magnitud>8.1</magnitud>
+        <detalles referencia="eq1">Amplios daños estructurales y un alto número de víctimas.</detalles>
+        <observaciones>Alerta de tsunami emitida y luego cancelada.</observaciones>
+    </terremoto>
+    <terremoto id="eq3" fecha="2021-08-15">
+        <ubicacion>Los Ángeles, EE.UU.</ubicacion>
+        <magnitud>6.5</magnitud>
+        <detalles>Daños moderados. Riesgo de réplicas.</detalles>
+        <observaciones>Fue sentido en un amplio rango geográfico.</observaciones>
+    </terremoto>
+    <terremoto id="eq4" fecha="2021-09-10">
+        <ubicacion>Atenas, Grecia</ubicacion>
+        <magnitud>5.8</magnitud>
+        <detalles>Pequeños daños reportados, sin víctimas.</detalles>
+        <historial>
+            <evento id="evt2">
+                <descripcion>Referencia a un sismo significativo en la antigüedad que alteró la
+                    ciudad.</descripcion>
+                <fechaEvento>412 BC</fechaEvento>
+            </evento>
+        </historial>
+        <ayuda eventosRelacionados="evt2">Respuestas rápidas minimizaron el impacto.</ayuda>
+    </terremoto>
+</terremotos>

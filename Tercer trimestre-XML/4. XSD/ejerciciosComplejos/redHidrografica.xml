@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<redHidrografica
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="redHidrografica.xsd">
+    <rio id="Rio001" nombre="Amazonas" longitud="7050">
+
+
+        
+        <fuente latitud="-10.282" longitud="-78.055"/>
+        <afluentes>
+            <afluente id="Afl001" nombre="Marañón" longitud="1500">
+                <fuente latitud="-9.082" longitud="-77.202"/>
+            </afluente>
+            <afluente id="Afl002" nombre="Ucayali" longitud="1771">
+                <fuente latitud="-11.352" longitud="-75.012"/>
+            </afluente>
+        </afluentes>
+    </rio>
+    <rio id="Rio002" nombre="Nilo" longitud="6650">
+        <fuente latitud="2.268" longitud="33.634"/>
+        <afluentes>
+            <afluente id="Afl003" nombre="Atbara" longitud="805">
+                <fuente latitud="12.708" longitud="35.832"/>
+            </afluente>
+            <afluente id="Afl004" nombre="Nilo Azul" longitud="1450">
+                <fuente latitud="10.096" longitud="38.014"/>
+            </afluente>
+        </afluentes>
+    </rio>
+</redHidrografica>
